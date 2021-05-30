@@ -1,0 +1,53 @@
+nav {
+    background-color: rgb(202, 174, 148);
+    font-family:cursive;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    cursor:pointer; 
+    
+}
+
+.button{border:chocolate;
+        text-align: center;
+        display: inline-block;
+        outline-style: double;
+        outline-offset: 4px;
+}
+    
+
+    *{background-color: rgb(202, 174, 148);}
+html {
+    padding: 200px;
+}
+
+header > h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    padding: auto;
+    font-style: italic;
+    color: rgb(65, 24, 24);
+}
+:hover.button{
+    font-size: 18.5px;
+    background-color: rgb(165, 135, 107);
+}
+:active.button{
+    font-size: 10px;
+    background-color: darkgreen;
+}
+:visited.button{
+    color: darkorchid;
+}
+:link.button{
+    color:indigo;
+}
+div a {color: indigo;}
+
+span > p{
+    font-style: italic;
+    font-size: 16px;
+}
+p+a {color: lawngreen;
+}
