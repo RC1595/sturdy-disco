@@ -1,3 +1,8 @@
+#page3 {
+    background-color:sienna;
+    font-family: cursive;
+}
+
 nav {
     background-color: rgb(202, 174, 148);
     font-family:cursive;
@@ -14,17 +19,37 @@ nav {
         outline-style: double;
         outline-offset: 4px;
 }
-    
 
-    *{background-color: rgb(202, 174, 148);}
-html {
-    padding: 200px;
+#page3nav {
+    padding:20pt;
+    background-color:sienna;
+    height: 20vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    font-size: 3.5em;
+    align-items: center;
 }
-
+#pizzapics {
+    background-color:sienna;
+    height:30vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+#vid {
+    background-color:sienna;
+    display:grid;
+    grid-template-columns: 1fr;
+    align-items:center;
+    justify-items:center;
+}
 header > h1{
     text-align: center;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 2em;
     padding: auto;
     font-style: italic;
     color: rgb(65, 24, 24);
