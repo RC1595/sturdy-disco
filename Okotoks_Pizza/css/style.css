@@ -34,6 +34,19 @@ nav {
     transition-timing-function: ease-out;
 }
 
+#body2 {
+    repeat: (auto-fit , minmax (250px 1fr))
+}
+
+/* Media rules for tablet */
+
+@media only screen and (min-width: 625px) {
+    #headerpage2 {
+        background-color: purple;
+        color: pink;
+    }
+}
+
 #page3nav {
     padding:5pt;
     background-color:sienna;
@@ -75,7 +88,11 @@ header > h1{
     width:100vw;
     align-items: center;
 }
-:hover#button1p2{
+
+/* Media rules laptop/PC */
+
+
+:hover#button1p2 {
     font-size:3rem;
     color:chocolate;
     transition-property:color yellow;
@@ -90,6 +107,15 @@ header > h1{
     font-size: 18.5px;
     background-color: rgb(165, 135, 107);
 }
+aside > ul {
+    width:20vw;
+    height:30vh;
+    display: inline-grid;
+    font-size: 1.5em;
+    
+}
+
+
 :active.button{
     font-size: 10px;
     background-color: darkgreen;
@@ -107,4 +133,20 @@ span > p{
     font-size: 16px;
 }
 p+a {color: lawngreen;
+}
+
+@media only screen and (min-width: 1075px) {
+    #nav2 {
+        color:darkorchid;
+        font-size: 2.2em;
+        background-color: deeppink;
+    }
+    #headerpage2 {
+        background-color: black;
+        color:chartreuse
+    }
+
+#body2 {
+            background-color:slategrey;
+        }
 }
