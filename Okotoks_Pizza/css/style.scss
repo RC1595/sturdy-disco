@@ -1,0 +1,125 @@
+@import "_navBar.scss";
+@import "_variables";
+@mixin buttonanimation{
+
+}
+
+html {
+    background-color: $background;
+}
+
+:hover.button {
+    font-size: .9em;
+    color:mediumspringgreen;
+    transition-property: color green;
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
+}
+
+
+:hover#button2 {
+    font-size: 1.01em;
+    color:rgb(196, 240, 40);
+    transition-property: color purple;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-out;
+}
+
+
+/* Media rules for tablet */
+
+@media only screen and (min-width: 625px) {
+    #headerpage2 {
+        background-color: purple;
+        color: pink;
+    }
+}
+
+#pizzapics {
+    height:30vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    align-items: center;
+    justify-items: center;
+}
+#vid {
+    display:grid;
+    grid-template-columns: 1fr;
+    align-items:center;
+    justify-items:center;
+}
+header > h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: auto;
+    font-style: italic;
+    color: rgb(65, 24, 24);
+}
+
+
+/* Media rules laptop/PC */
+
+
+:hover#button1p2 {
+    font-size:3rem;
+    color:chocolate;
+    transition-property:color yellow;
+    transition-duration: 2.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 100ms;
+}
+#headerpage2{
+    font-size: 3em;
+}
+:hover.button{
+    font-size: 18.5px;
+    background-color: rgb(165, 135, 107);
+}
+aside {
+    width:20vw;
+    height: 30vh;
+    border-color: black;
+    border-style:solid; 
+    ul {
+    display: inline-grid;
+    font-size: 1.5em;
+    
+}}
+
+
+:active.button{
+    font-size: 10px;
+    background-color: darkgreen;
+}
+:visited.button{
+    color: darkorchid;
+}
+:link.button{
+    color:indigo;
+}
+div a {color: indigo;}
+
+span > p{
+    font-style: italic;
+    font-size: 16px;
+}
+p + a {color: lawngreen;
+}
+
+@media only screen and (min-width: 1075px) {
+    #nav2 {
+        color:darkorchid;
+        font-size: 2.2em;
+        background-color: deeppink;
+    }
+    #headerpage2 {
+        background-color: black;
+        color:chartreuse
+    }
+
+#body2 {
+            background-color:slategrey;
+        }
+}

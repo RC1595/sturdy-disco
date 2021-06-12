@@ -1,152 +1,163 @@
-#page3 {
-    background-color:sienna;
-    font-family: cursive;
+.navBar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  height: 20vh;
+  width: 100vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border: 1px #f70505 solid;
+  padding: 5pt;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  font-size: 3.5em;
 }
 
-nav {
-    background-color: rgb(202, 174, 148);
-    font-family:cursive;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    cursor:pointer; 
-    
+html {
+  background-color: #f7904b;
 }
 
-.button{border:chocolate;
-        text-align: center;
-        display: inline-block;
-        outline-style: double;
-        outline-offset: 4px;
+:hover.button {
+  font-size: .9em;
+  color: mediumspringgreen;
+  -webkit-transition-property: color green;
+  transition-property: color green;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
 }
-:hover#button1 {
-    font-size: .9em;
-    color:mediumspringgreen;
-    transition-property: color green;
-    transition-duration: 1.5s;
-    transition-timing-function: ease-in;
-}
+
 :hover#button2 {
-    font-size: 1.01em;
-    color:rgb(196, 240, 40);
-    transition-property: color purple;
-    transition-duration: 1.5s;
-    transition-timing-function: ease-out;
-}
-
-#body2 {
-    repeat: (auto-fit , minmax (250px 1fr))
+  font-size: 1.01em;
+  color: #c4f028;
+  -webkit-transition-property: color purple;
+  transition-property: color purple;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 
 /* Media rules for tablet */
-
 @media only screen and (min-width: 625px) {
-    #headerpage2 {
-        background-color: purple;
-        color: pink;
-    }
+  #headerpage2 {
+    background-color: purple;
+    color: pink;
+  }
 }
 
-#page3nav {
-    padding:5pt;
-    background-color:sienna;
-    height: 20vh;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 5px;
-    font-size: 3.5em;
-    align-items: center;
-}
 #pizzapics {
-    background-color:sienna;
-    height:30vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 5pxpx;
-    align-items: center;
-    justify-items: center;
+  height: 30vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
+
 #vid {
-    background-color:sienna;
-    display:grid;
-    grid-template-columns: 1fr;
-    align-items:center;
-    justify-items:center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
-header > h1{
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
-    padding: auto;
-    font-style: italic;
-    color: rgb(65, 24, 24);
-}
-#nav2 {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height:15vh;
-    width:100vw;
-    align-items: center;
+
+header > h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: auto;
+  font-style: italic;
+  color: #411818;
 }
 
 /* Media rules laptop/PC */
-
-
 :hover#button1p2 {
-    font-size:3rem;
-    color:chocolate;
-    transition-property:color yellow;
-    transition-duration: 2.5s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 100ms;
-}
-#headerpage2{
-    font-size: 3em;
-}
-:hover.button{
-    font-size: 18.5px;
-    background-color: rgb(165, 135, 107);
-}
-aside > ul {
-    width:20vw;
-    height:30vh;
-    display: inline-grid;
-    font-size: 1.5em;
-    
+  font-size: 3rem;
+  color: chocolate;
+  -webkit-transition-property: color yellow;
+  transition-property: color yellow;
+  -webkit-transition-duration: 2.5s;
+          transition-duration: 2.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
 }
 
+#headerpage2 {
+  font-size: 3em;
+}
 
-:active.button{
-    font-size: 10px;
-    background-color: darkgreen;
+:hover.button {
+  font-size: 18.5px;
+  background-color: #a5876b;
 }
-:visited.button{
-    color: darkorchid;
-}
-:link.button{
-    color:indigo;
-}
-div a {color: indigo;}
 
-span > p{
-    font-style: italic;
-    font-size: 16px;
+aside {
+  width: 20vw;
+  height: 30vh;
+  border-color: black;
+  border-style: solid;
 }
-p+a {color: lawngreen;
+
+aside ul {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  font-size: 1.5em;
+}
+
+:active.button {
+  font-size: 10px;
+  background-color: darkgreen;
+}
+
+:visited.button {
+  color: darkorchid;
+}
+
+:link.button {
+  color: indigo;
+}
+
+div a {
+  color: indigo;
+}
+
+span > p {
+  font-style: italic;
+  font-size: 16px;
+}
+
+p + a {
+  color: lawngreen;
 }
 
 @media only screen and (min-width: 1075px) {
-    #nav2 {
-        color:darkorchid;
-        font-size: 2.2em;
-        background-color: deeppink;
-    }
-    #headerpage2 {
-        background-color: black;
-        color:chartreuse
-    }
-
-#body2 {
-            background-color:slategrey;
-        }
+  #nav2 {
+    color: darkorchid;
+    font-size: 2.2em;
+    background-color: deeppink;
+  }
+  #headerpage2 {
+    background-color: black;
+    color: chartreuse;
+  }
+  #body2 {
+    background-color: slategrey;
+  }
 }
+/*# sourceMappingURL=style.css.map */

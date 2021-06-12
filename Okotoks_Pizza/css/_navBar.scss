@@ -1,0 +1,17 @@
+.navBar {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height:20vh;
+    width:100vw;
+    align-items: center;
+    justify-items: center;
+    border: 1px rgb(247, 5, 5) solid;
+    padding:5pt;
+    column-gap: 5px;
+    font-size: 3.5em;
+}
+
+
+
+
+
